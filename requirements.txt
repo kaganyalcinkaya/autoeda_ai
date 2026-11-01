@@ -1,0 +1,11 @@
+streamlit
+numpy==1.26.4
+pandas==2.1.4
+pyarrow==17.0.0
+sweetviz
+pycaret==3.3.2
+scikit-learn
+matplotlib
+seaborn
+plotly
+openpyxl
