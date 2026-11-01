@@ -1,7 +1,5 @@
 # AutoEDA AI
 
-CSV veya Excel dosyalarını sürükle-bırak yöntemiyle yükleyip Sweetviz ile keşifsel veri analizi (EDA), PyCaret ile otomatik makine öğrenmesi (AutoML) yapabileceğiniz Streamlit uygulaması.
-
 ## Özellikler
 
 - CSV, XLSX ve XLS dosyalarını sürükleyip bırakarak yükleme
@@ -70,15 +68,7 @@ Tarayıcıda genellikle `http://localhost:8501` adresi açılır.
 6. **PyCaret AutoML çalıştır** düğmesine bas.
 7. Model karşılaştırma tablosunu CSV, eğitilmiş modeli PKL olarak indir.
 
-## Önemli notlar
 
-- Sweetviz ve PyCaret farklı amaçlara hizmet eder: Sweetviz veriyi keşfeder; PyCaret hedef değişken kullanarak model eğitir.
-- Sınıflandırma; örneğin kredi temerrüdü gibi kategorik sınıfları tahmin etmek içindir. Regresyon; örneğin gelir veya fiyat gibi sayısal değerleri tahmin etmek içindir.
-- Hedef değişkeni doğru seçmelisin. Hedefle doğrudan ilişkili veya tahmin anında bilinmeyecek sütunlar veri sızıntısına (data leakage) neden olabilir.
-- Uygulama yüklenen dosyayı Git deposuna yazmaz. Dosyayı GitHub'a commit etme; `.gitignore` içinde veri dosyaları hariç tutulmuştur.
-- `.pkl` model dosyalarını yalnızca güvendiğin kaynaklardan yükle. Pickle dosyalarının açılması güvenilmeyen dosyalarda kod çalıştırma riski taşır.
-- Bu proje başlangıç amaçlıdır; finansal/kredi kararlarında kullanılmadan önce veri kalitesi, adalet, açıklanabilirlik, bağımsız test ve mevzuat kontrolleri yapılmalıdır.
-- Uygulama şu an yerel kullanım içindir. Herkese açık sunucuya dağıtmadan önce kimlik doğrulama, dosya boyutu sınırı, kaynak kullanımı ve veri gizliliği önlemleri ekle.
 
 ## Proje yapısı
 
@@ -91,20 +81,6 @@ autoeda-ai/
 └── LICENSE
 ```
 
-## GitHub'a yükleme
-
-GitHub'da boş bir depo oluşturduktan sonra proje klasöründe:
-
-```bash
-git init
-git add .
-git commit -m "Initial AutoEDA AI application"
-git branch -M main
-git remote add origin https://github.com/KULLANICI_ADIN/autoeda-ai.git
-git push -u origin main
-```
-
-`finance_dataset.csv`, kişisel veri içeren dosyalar, sanal ortam ve model çıktıları depoya eklenmemelidir.
 
 ## Lisans
 
